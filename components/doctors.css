@@ -1,5 +1,6 @@
 body {
   font-family: "Work Sans", sans-serif;
+  min-height: 100vh;
 }
 
 .slide-circles span {
@@ -23,7 +24,7 @@ body {
 .subhead {
   background-image: url("/images/SubHead.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   height: 300px;
 }
 .subhead p {
@@ -128,6 +129,7 @@ body {
 
 .news {
   padding-top: 50px;
+  padding-bottom: 100px;
 }
 .news h3 {
   color: #159EEC;
@@ -185,4 +187,4 @@ body {
   align-items: center;
   justify-content: space-around;
   gap: 10px;
-}/*# sourceMappingURL=doctors.css.map */
+}

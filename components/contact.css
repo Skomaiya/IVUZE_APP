@@ -1,0 +1,192 @@
+.form-input::-moz-placeholder {
+  color: white;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.form-input::placeholder {
+  color: white;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.form-input-2::-moz-placeholder {
+  color: white;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.form-input-2::placeholder {
+  color: white;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.subhead {
+  background-image: url("/images/contact-subhead.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.contact-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.contact-hero h3 {
+  font-size: 18px;
+  color: #159EEC;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.contact-hero h1 {
+  font-size: 32px;
+  font-family: Yeseva One;
+  font-weight: 400;
+  padding-bottom: 15px;
+  color: #1F2B6C;
+}
+.contact-hero .first-div form {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  width: 100%;
+}
+.contact-hero .first-div form .first {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: -5px;
+}
+.contact-hero .first-div form .first .form-input {
+  border: 1px solid white;
+  background-color: #1f2b6c;
+  font-family: Work Sans;
+  font-size: 16px;
+  color: white;
+  border-radius: 0;
+  height: 50px;
+}
+.contact-hero .first-div form .first .form-input-2 {
+  border: 1px solid white;
+  background-color: #1f2b6c;
+  font-family: Work Sans;
+  font-size: 16px;
+  color: white;
+  border-radius: 0;
+  margin-left: -20px;
+  height: 50px;
+}
+.contact-hero .first-div form .form-input {
+  border: 1px solid white;
+  background-color: #1f2b6c;
+  font-family: Work Sans;
+  font-size: 16px;
+  color: white;
+  border-radius: 0;
+  width: 100%;
+}
+.contact-hero .first-div form .form-input-2 {
+  border: 1px solid white;
+  background-color: #1f2b6c;
+  font-family: Work Sans;
+  font-size: 16px;
+  color: #fcfefe;
+  border-radius: 0;
+  width: 100%;
+  height: 235px;
+  text-align: left;
+}
+.contact-hero .first-div form .submit {
+  width: 100%;
+  color: #1f2b6c;
+  margin-top: -1px;
+  border-radius: 1px;
+  cursor: pointer;
+}
+.contact-hero .contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.contact-hero .contact-container .contact-card {
+  width: 233px;
+  height: 225px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #BFD2F8;
+  gap: 10px;
+  border-radius: 5px;
+}
+.contact-hero .contact-container .contact-card img {
+  width: 40px;
+  height: 38px;
+  margin-left: 30px;
+}
+.contact-hero .contact-container .contact-card h3 {
+  color: #1F2B6C;
+  margin-left: 30px;
+  font-size: 18px;
+}
+.contact-hero .contact-container .contact-card p {
+  font-size: 16px;
+  color: #1F2B6C;
+  font-weight: 300;
+  margin-left: 30px;
+}
+.contact-hero .contact-container .contact-card-2 {
+  width: 233px;
+  height: 225px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #1F2B6C;
+  gap: 10px;
+  border-radius: 5px;
+}
+.contact-hero .contact-container .contact-card-2 img {
+  width: 30px;
+  height: 35px;
+  margin-left: 30px;
+}
+.contact-hero .contact-container .contact-card-2 h3 {
+  color: #BFD2F8;
+  margin-left: 30px;
+  font-size: 18px;
+}
+.contact-hero .contact-container .contact-card-2 p {
+  font-size: 16px;
+  color: #BFD2F8;
+  font-weight: 300;
+  margin-left: 30px;
+}
+.contact-hero .contact-container .contact-card-3 {
+  width: 233px;
+  height: 225px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #BFD2F8;
+  gap: 10px;
+  border-radius: 5px;
+}
+.contact-hero .contact-container .contact-card-3 img {
+  width: 40px;
+  height: 35px;
+  margin-left: 30px;
+}
+.contact-hero .contact-container .contact-card-3 h3 {
+  color: #1F2B6C;
+  margin-left: 30px;
+  font-size: 18px;
+}
+.contact-hero .contact-container .contact-card-3 p {
+  font-size: 16px;
+  color: #1F2B6C;
+  font-weight: 300;
+  margin-left: 30px;
+}/*# sourceMappingURL=contact.css.map */
