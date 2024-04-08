@@ -1,0 +1,188 @@
+body {
+  font-family: "Work Sans", sans-serif;
+}
+
+.slide-circles span {
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 4px;
+}
+
+.slide-circles span.active {
+  background-color: #bfd2f8;
+}
+
+.container {
+  padding-inline: 100px;
+  padding-block: 100px;
+}
+
+.subhead {
+  background-image: url("/images/SubHead.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+}
+.subhead p {
+  padding-inline: 250px;
+  padding-top: 80px;
+  color: #1f2b6c;
+  font-size: 18px;
+  font-weight: 400;
+}
+.subhead h1 {
+  padding-inline: 250px;
+  padding-top: 20px;
+  font-family: Yeseva One;
+  font-size: 48px;
+  color: #1f2b6c;
+  font-weight: 200;
+}
+
+.doctors {
+  height: 1000p;
+  display: flex;
+  justify-content: center;
+}
+.doctors .doctors-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+}
+.doctors .doctors-container .doctor-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.doctors .doctors-container .doctor-card .text {
+  text-align: center;
+  background-color: #bfd2f8;
+  height: 142px;
+}
+.doctors .doctors-container .doctor-card .text p {
+  font-size: 18px;
+  color: #1f2b6c;
+  font-weight: 300;
+  padding-top: 10px;
+}
+.doctors .doctors-container .doctor-card .text h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #1f2b6c;
+  padding-top: 10px;
+}
+.doctors .doctors-container .doctor-card .text a {
+  background-color: #1f2b6c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #bfd2f8;
+  font-size: 18px;
+  text-decoration: none;
+  position: relative;
+  bottom: -34px;
+  height: 46px;
+}
+
+.testimonials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/images/Testimonials.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 441px;
+}
+.testimonials .test-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.testimonials .test-container p {
+  font-size: 22px;
+  color: white;
+  transition: transform 0.5s ease;
+}
+.testimonials .test-container .text-owner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  bottom: -50px;
+  gap: 20px;
+  border-top: 1px solid white;
+  width: 278px;
+}
+.testimonials .test-container .text-owner h4 {
+  padding-block: 30px;
+  font-size: 22px;
+  color: white;
+  font-weight: 300;
+}
+
+.news {
+  padding-top: 50px;
+}
+.news h3 {
+  color: #159EEC;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+.news h2 {
+  font-family: Yeseva One;
+  font-size: 32px;
+  font-weight: 300;
+  color: #1F2B6C;
+  text-align: center;
+}
+.news .news-articles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 100px;
+}
+.news .news-articles .article {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+}
+.news .news-articles .article .text p {
+  color: #159EEC;
+  font-size: 12;
+  font-weight: 300;
+}
+.news .news-articles .article .text h4 {
+  font-weight: 400;
+  font-size: 18px;
+  width: 260px;
+  padding-block: 10px;
+}
+.news .news-articles .article .text .icons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 30px;
+  position: relative;
+  bottom: -10px;
+}
+.news .news-articles .article .text .icons .eye {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+}
+.news .news-articles .article .text .icons .heart {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+}/*# sourceMappingURL=doctors.css.map */
