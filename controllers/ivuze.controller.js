@@ -1,4 +1,4 @@
-import ivuzeModel from "../model/ivuze.model";
+import ivuzeModel from "../model/ivuze.model.js";
 const ivuzeController = {
      create : async (req, res, next) => {
         try {

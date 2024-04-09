@@ -7,15 +7,15 @@ const ivuzeSchema = new mongoose.Schema({
         required:true
     },
     email:{
-        type:string,
+        type:String,
         required:true
     },
     role:{
-        type:string,
+        type:String,
         required:true
     },
     hospitalCategory:{
-        type:string,
+        type:String,
         required:true
     },
     password:{
@@ -23,5 +23,5 @@ const ivuzeSchema = new mongoose.Schema({
         required:true
     }
 },{timestamps:true})
-ivuzeModel = mongoose.model("Users",ivuzeSchema)
+const ivuzeModel = mongoose.model("Users",ivuzeSchema)
 export default ivuzeModel;
