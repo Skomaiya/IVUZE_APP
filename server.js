@@ -3,6 +3,7 @@ import dotenv from "dotenv"
 dotenv.config()
 import mongoose from "mongoose"
 import router from "./routes/ivuze.route.js"
+import errorhandling from "./middleware/errorhandler.js"
 
 const app = express()
 
@@ -24,3 +25,4 @@ mongoose.connect(db)
         console.log(err)
     }
 
+app.use(errorhandling)
