@@ -365,7 +365,7 @@ body {
   gap: 20px;
   background-color: #fff;
   border-radius: 10px;
-  box-shadow: 0 0 10px 0 #eaeaea;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .news-info {
   display: flex;
@@ -411,10 +411,8 @@ footer {
   width: 100px;
 }
 .logo p {
-  font-family: "Work Sans";
-  font-style: normal;
+  font-family: "Work Sans", sans-serif;
   font-weight: 300;
-  font-size: 14px;
   line-height: 28px;
   text-align: center;
   color: #ffffff;
