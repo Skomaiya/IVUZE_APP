@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="sign-up.css" />
+    <script src="https://kit.fontawesome.com/a76e832906.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Ivuze app</title>
+  </head>
+  <body>
+    <header>
+      <div class="nav">
+        <div class="pre-nav">
+          <div class="h-logo">
+            <a href="home.html"><img src="/images/logo.png" alt="img"/></a>
+          </div>
+          <div class="pre-nav-info">
+            <div class="pre-menu">
+              <img src="/images/phone.png" alt="img" />
+              <div class="pre-menu-info">
+                <h3>EMERGENCY</h3>
+                <p>(250) 781-812-255</p>
+              </div>
+            </div>
+            <div class="pre-menu">
+              <img src="/images/clock.png" alt="img" />
+              <div class="pre-menu-info">
+                <h3>WORKING HOURS</h3>
+                <p>24/7</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-menu">
+          <ul>
+            <li><a href="/components/home.html">Home</a></li>
+            <li><a href="/components/about.html">About Us</a></li>
+            <li><a href="/components/doctors.html">Doctors</a></li>
+            <li><a href="/components/hospitals.html">Hospitals</a></li>
+            <li><a href="/components/contact.html">Contact</a></li>
+            <li><a href="/components/sign-up.html">SignUp</a></li>
+            <li><a href="/components/login.html">LogIn</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <div class="form-container">  
+      <form action="#" method="post" name="submit-to-google-sheet">
+        <h2>Sign Up</h2>
+          <div>
+            <input type="text" name="full_name" placeholder="Name" required>
+          </div>
+          <div class="hospital-type">
+            <h4>Hospital Type</h4><br>
+            <div>
+              <input type="radio" name="hospital-type" id="public">
+              <label for="public">Public</label><br><br>
+            </div>
+            <div>
+              <input type="radio" name="hospital-type" id="private">
+              <label for="private">Private</label>
+            </div>
+          </div>          
+          <div>
+            <div>
+              <input type="email" name="email" placeholder="Email" required><br>
+            </div>
+            <input type="password" name="password" placeholder="Password" required><br>
+            <p>Lost password <a href="#">Click here!</a></p><br>
+            <input type="submit" value="Sign Up as hospital" onclick="addHospital()">
+          </div>
+
+      </form>
+      <div class="patient-form">
+        <p>OR</p><br>
+        <input type="submit" value="Sign Up as patient" onclick="remHospital()">
+      </div>
+      
+    </div>  
+
+    <footer>
+      <div class="footer container">
+        <div class="top">
+          <div class="logo">
+            <img src="/images/logo2.png" alt="img" />
+            <p>Leading the Way in Medical <br> Execellence, Trusted Care.</p>
+          </div>
+          <div class="links">
+            <h3>Important Links</h3>
+            <ul>
+              <li><a href="#">Appiontment</a></li>
+              <li><a href="#">Doctors</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">About Us</a></li>
+            </ul>
+          </div>
+          <div class="contact">
+            <h3>Contact Us</h3>
+            <div class="contact-info">
+              <p>Call: (237) 681-812-255</p>
+              <p>Email: ivuze@example.com</p>
+            </div>
+          </div>
+          <div class="newsletter">
+            <h3>Newsletter</h3>
+            <div class="input">
+              <input type="text" placeholder="Enter your email address" />
+              <img src="/images/submit.png" alt="img" />
+            </div>
+          </div>
+        </div>
+        <div class="bottom">
+          <img src="/images/line.png" alt="" />
+          <div class="bottom-info">
+            <p>© 2021 IVUZE All Rights Reserved by PNTEC-LTD</p>
+            <div class="social-icons">
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="login.js"></script>
+  </body>
+</html>
