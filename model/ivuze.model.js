@@ -16,7 +16,7 @@ const ivuzeSchema = new mongoose.Schema({
     },
     hospitalCategory:{
         type:String,
-        required:true
+        required:false
     },
     password:{
         type:String,
