@@ -126,7 +126,9 @@ body {
   color: white;
   font-weight: 300;
 }
-
+.text {
+  height: 150px;
+}
 .news {
   padding-top: 50px;
   padding-bottom: 100px;

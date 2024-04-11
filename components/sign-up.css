@@ -1,0 +1,310 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Work Sans", sans-serif;
+}
+
+.nav {
+  width: 100%;
+  margin-top: 20px;
+}
+.pre-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.pre-nav-info {
+  position: relative;
+  display: flex;
+  gap: 40px;
+  right: 250px;
+}
+.pre-menu {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+}
+.pre-menu img {
+  width: 30px;
+  height: 30px;
+}
+.pre-menu-info p {
+  color: #159eec;
+}
+.pre-menu-info h3 {
+  color: #1f2b6c;
+}
+.nav-menu {
+  margin-top: 20px;
+  height: 70px;
+  background-color: #1f2b6c;
+  display: flex;
+  justify-content: center;
+}
+.nav-menu ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.nav-menu ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 300;
+}
+.nav-menu ul li a:hover {
+  color: #159eec;
+  font-weight: 600;
+}
+
+/* Form styles */
+.form-container {
+  margin: 50px auto;
+  max-width: 400px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  margin-top: 10px;
+  text-align: center;
+  align-items: center;
+  width: auto;
+  height: 450px;
+}
+
+form h2 {
+  margin-bottom: 20px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+  width: calc(100% - 40px);
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.hospital-type {
+  margin-bottom: 20px;
+  margin-right: 200px;
+}
+
+
+.hospital-type label {
+  display: inline-block;
+  margin-right: 10px;
+  margin-top: 5px;
+  cursor: pointer;
+  position: relative;
+  padding-left: 25px;
+  font-size: 16px;
+}
+
+.hospital-type input[type="radio"] {
+  display: none;
+}
+
+.hospital-type input[type="radio"] + label:before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid #1f2b6c;
+  position: absolute;
+  left: 0;
+  top: 1px;
+}
+
+.hospital-type input[type="radio"]:checked + label:before {
+  background-color: #1f2b6c;
+}
+
+.hospital-type input[type="radio"] + label:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+
+form input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+form input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.patient-form{
+  margin-top: -30px;
+  display: block;
+  text-align: center;
+  align-items: center;
+}
+.patient-form p{
+  font-size: 15px;
+}
+.patient-form input[type="submit"] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.patient-form input[type="submit"]:hover{
+  background-color: #0056b3;
+}
+
+/*** footer ***/
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+.footer {
+  width: 100%;
+  margin-top: 20px;
+  background-color: #1f2b6c;
+  color: #ffffff;
+  font-family: "Work Sans", sans-serif;
+}
+.top {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.logo {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 30px;
+}
+.logo img {
+  width: 100px;
+}
+.logo p {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 28px;
+  text-align: center;
+  color: #ffffff;
+}
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 80px;
+}
+.links h3 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+}
+.links ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;
+}
+.links ul li a {
+  color: #fff;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 300;
+  text-decoration: none;
+}
+.links ul li a:hover {
+  text-decoration: underline;
+  color: #bfd2f8;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 20px;
+}
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.contact-info p {
+  font-weight: 300;
+}
+.contact h3 {
+  font-weight: 500;
+}
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 25px;
+}
+.newsletter h3 {
+  font-weight: 500;
+}
+.input {
+  background-color: #bfd2f8;
+  width: 300px;
+  display: flex;
+  gap: 30px;
+  border-radius: 5px;
+}
+.input img {
+  margin-top: 13px;
+  width: 30px;
+  height: 30px;
+}
+input {
+  background-color: #bfd2f8;
+  width: 200px;
+  padding: 20px;
+  border: none;
+  border-radius: 5px;
+}
+.bottom {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+}
+.bottom-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+.social-icons {
+  display: flex;
+  gap: 20px;
+  width: 20px;
+  height: 20px;
+}
+.fa-brands{
+  width: 30px;
+  height: 20px;
+  color: #ffffff;
+}
+.container {
+  padding-inline: 150px;
+}
