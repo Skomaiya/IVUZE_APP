@@ -138,8 +138,22 @@ body {
 .service-icon {
   position: absolute;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1f2b6c;
+  padding: 30px;
+  border-radius: 50%;
   left: 200px;
   top: 240px;
+}
+.service-icon:hover {
+  background-color: #1f2b6ca8;
+  border-radius: 0;
+  left: 0;
+  top: 0;
+  width: 300px;
+  height: 282px;
+  cursor: pointer;
 }
 
 /*** footer ***/
