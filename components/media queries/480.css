@@ -1,0 +1,48 @@
+@media (max-width: 480px) {
+  .nav-logo h1 a {
+    font-size: 25px;
+  }
+  .hero {
+    position: relative;
+    display: flex;
+    background: url(/images/hero480.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero-content {
+    position: relative;
+    text-align: center;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+  }
+  .welcome h1 {
+    position: relative;
+    font-size: 25px;
+  }
+  .welcome h3 {
+    font-size: 14px;
+  }
+  .welcome p {
+    font-size: 12px;
+    width: 300px;
+  }
+  .welcome a {
+    font-size: 12px;
+  }
+  .welcome a img {
+    width: 10px;
+  }
+  .welcome img {
+    width: 400px;
+  }
+  .booking h1 {
+    font-size: 25px;
+  }
+  .booking p {
+    font-size: 12px;
+  }
+}

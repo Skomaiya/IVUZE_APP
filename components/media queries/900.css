@@ -1,0 +1,100 @@
+@media (max-width: 900px) {
+  .h-logo {
+    display: none;
+  }
+  .pre-nav-info {
+    font-size: 12px;
+    right: 0;
+  }
+  .nav-menu {
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+  }
+  .nav-menu ul.active {
+    opacity: 1;
+    transition: 0.3s;
+    height: 40vh;
+  }
+  .nav-menu ul {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background: #bfd2f89e;
+    top: 140px;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 0;
+    transition: 0.3s;
+    z-index: 2;
+    opacity: 0;
+  }
+  .nav-menu ul li a {
+    color: #1f2b6c;
+    font-weight: 400;
+    transition: 0.3s;
+  }
+  .nav-btn {
+    display: flex;
+    position: relative;
+    gap: 20px;
+  }
+  .close {
+    display: none;
+  }
+  .nav-logo h1 a {
+    display: block;
+  }
+  .welcome {
+    text-align: center;
+  }
+  .about {
+    display: none;
+  }
+  .speciality {
+    display: none;
+  }
+  .booking {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+  .booking-info {
+    margin-top: 40px;
+  }
+  .logo p {
+    width: 200px;
+    text-align: left;
+    font-size: 12px;
+  }
+  .links {
+    display: none;
+  }
+  .input {
+    width: 250px;
+    height: 40px;
+  }
+  .input img {
+    position: relative;
+    width: 25px;
+    height: 25px;
+    right: 10px;
+    bottom: 5px;
+  }
+  .container {
+    padding-inline: 20px;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1160px) {
+  .pre-nav-info {
+    position: relative;
+    right: 150px;
+  }
+  .container {
+    padding-inline: 0;
+  }
+}
