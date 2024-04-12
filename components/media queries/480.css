@@ -45,4 +45,60 @@
   .booking p {
     font-size: 12px;
   }
+  .form {
+    width: 350px;
+  }
+  .form-grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .form-grid input {
+    width: 500px;
+  }
+  .news h3 {
+    font-size: 14px;
+    text-align: center;
+  }
+  .news-articles {
+    display: flex;
+  }
+  .news-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+  }
+  .news-card img {
+    width: 300px;
+  }
+  .news-info {
+    align-items: center;
+  }
+  .views img {
+    width: 40px;
+    margin-bottom: 10px;
+  }
+  .top {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .logo {
+    position: relative;
+    left: -30px;
+  }
+  .contact {
+    font-size: 15px;
+    position: relative;
+    left: -30px;
+  }
+  .bottom-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  .bottom-info p {
+    font-size: 12px;
+  }
 }
