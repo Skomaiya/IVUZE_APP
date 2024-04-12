@@ -95,7 +95,7 @@ body {
   background-image: url("/images/Testimonials.png");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 441px;
+  height: 500px;
 }
 .testimonials .test-container {
   display: flex;
@@ -103,6 +103,11 @@ body {
   align-items: center;
   justify-content: center;
   gap: 30px;
+}
+.test-container {
+  height: 400px;
+  position: relative;
+  overflow: hidden;
 }
 .testimonials .test-container p {
   font-size: 22px;

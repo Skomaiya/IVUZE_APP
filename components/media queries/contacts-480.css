@@ -1,0 +1,22 @@
+@media (max-width: 480px) {
+  .contact-hero {
+    margin-top: -250px;
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-hero .contact-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 900px) {
+  .contact-hero {
+    margin-top: -250px;
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-hero .contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}/*# sourceMappingURL=contacts-480.css.map */
