@@ -1,0 +1,369 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Yeseva+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Work Sans", sans-serif;
+  min-height: 100vh;
+}
+
+.nav {
+  width: 100%;
+  margin-top: 20px;
+}
+.pre-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.pre-nav-info {
+  position: relative;
+  display: flex;
+  gap: 40px;
+  right: 250px;
+}
+.pre-menu {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+}
+.pre-menu img {
+  width: 30px;
+  height: 30px;
+}
+.pre-menu-info p {
+  color: #159eec;
+}
+.pre-menu-info h3 {
+  color: #1f2b6c;
+}
+.nav-menu {
+  margin-top: 20px;
+  height: 70px;
+  background-color: #1f2b6c;
+  display: flex;
+  justify-content: center;
+}
+.nav-menu ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.nav-menu ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 300;
+}
+.nav-menu ul li a:hover {
+  color: #159eec;
+  font-weight: 600;
+}
+
+/*** hero ***/
+
+.hero {
+  position: relative;
+  min-height: 500px;
+  width: 100%;
+  background: url(/images/hero-bg.png) no-repeat right top / cover;
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  left: 100px;
+  top: 200px;
+}
+.hero-content h1 {
+  color: #1f2b6c;
+  font-size: 40px;
+  font-weight: 600;
+  font-family: "Yeseva One", serif;
+  width: 250px;
+}
+.hero-content h3 {
+  color: #159eec;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/*** body ***/
+.service{
+  position:relative;
+}
+.servicepic{
+  opacity: 50%
+}
+.servicesub{
+  position: absolute;
+  top: 25%;
+  padding: 40px;
+  color: 1F2B6C;
+}
+
+.servicesub h2{
+  font-size: 40px;
+  font-family: "Yeseva One", serif;
+}
+
+.logos{
+  position: relative;
+  display:block;
+  padding-top: 7em;
+  padding-left: 10em;
+  color: 1F2B6C;
+  
+}
+
+
+.sublogo2{
+  display: inline-flex;
+  padding-left: 2em;
+  padding-top: 20px;
+}
+
+.mainpic{
+  position: relative;
+  display: flex;
+  left: 30em;
+  bottom: 8em;
+
+}
+.mainpic img{
+  width: 50%;
+}
+
+.passion{
+  position: relative;
+  display: flex;
+  left:15.5em;
+  bottom: 3.5em;
+  font-family: "Work Sans", sans-serif;
+  font-size: 32px;
+  color: #1f2b6c;
+
+}
+
+.list1{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 3em;
+  left:31em;
+  bottom: 6em;
+  font-family: "Work Sans", sans-serif;
+}
+
+.list2{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 5em;
+  left:31em;
+  bottom: 5em;
+  font-family:"Work Sans", sans-serif ;
+}
+
+.servicedes{
+  position: relative;
+  display: flex;
+  position: relative;
+  width: 50%;
+  left: 30em;
+  bottom: 4em;
+  
+
+}
+
+.doctors{
+  position: relative;
+  text-align: center;
+
+}
+
+.doctors h3{
+  color:#159EEC;
+}
+
+.doctors h2{
+  color: #1f2b6c;
+}
+
+.doctor-card{
+  position: relative;
+  text-align: center;
+  padding-top: 4em;
+
+}
+.text {
+  position: inherit;
+  text-align: inherit;
+  background-color: #bfd2f8;
+  left: 28em;
+  height: 142px;
+  width: 316px;
+  weight: 100px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.text h3{
+  padding-top: 10px;
+}
+
+.text p{
+  padding-top: 10px;
+}
+
+.text a {
+  background-color: #1f2b6c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #bfd2f8;
+  font-size: 18px;
+  text-decoration: none;
+  position: relative;
+  bottom: -34px;
+  height: 46px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+
+/***footer***/
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  .footer {
+    width: 100%;
+    margin-top: 20px;
+    background-color: #1f2b6c;
+    color: #ffffff;
+    font-family: "Work Sans", sans-serif;
+  }
+  .top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .logo {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+  }
+  .logo img {
+    width: 100px;
+  }
+  .logo p {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 300;
+    line-height: 28px;
+    text-align: center;
+    color: #ffffff;
+  }
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 80px;
+  }
+  .links h3 {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 500;
+  }
+  .links ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
+  }
+  .links ul li a {
+    color: #fff;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+  }
+  .links ul li a:hover {
+    text-decoration: underline;
+    color: #bfd2f8;
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 20px;
+  }
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .contact-info p {
+    font-weight: 300;
+  }
+  .contact h3 {
+    font-weight: 500;
+  }
+  .newsletter {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 25px;
+  }
+  .newsletter h3 {
+    font-weight: 500;
+  }
+  .input {
+    background-color: #bfd2f8;
+    width: 300px;
+    display: flex;
+    gap: 30px;
+    border-radius: 5px;
+  }
+  .input img {
+    margin-top: 13px;
+    width: 30px;
+    height: 30px;
+  }
+  input {
+    background-color: #bfd2f8;
+    width: 200px;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+  }
+  .bottom {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+  }
+  .bottom-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 80px;
+  }
+  .social-icons {
+    display: flex;
+    gap: 20px;
+  }
+  .container {
+    padding-inline: 150px;
+  }
+  
