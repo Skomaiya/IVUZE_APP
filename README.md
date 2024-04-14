@@ -1,8 +1,8 @@
-IVUZE Web Proposal
-Overview
+**IVUZE Web Proposal**
+**Overview**
 IVUZE is a comprehensive web solution designed to revolutionize the healthcare sector in Rwanda. It focuses on improving access to specialist consultations and medical services by streamlining hospital operations and enhancing patient care experiences.
 
-Objectives
+**Objectives**
 Access Improvement: Facilitate easier access to specialist consultations and medical services for patients across Rwanda.
 Operational Efficiency: Automate resource allocation and optimize service availability to reduce patient waiting times.
 Resource Utilization: Minimize specialist scheduling conflicts to enhance resource utilization within hospitals.
