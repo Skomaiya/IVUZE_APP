@@ -3,43 +3,52 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 html {
     scroll-behavior: smooth;
 }
+
 body {
     font-family: "Work Sans", sans-serif;
 }
-  
+
 .nav {
     width: 100%;
     margin-top: 20px;
 }
+
 .pre-nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
+
 .pre-nav-info {
     position: relative;
     display: flex;
     gap: 40px;
     right: 250px;
 }
+
 .pre-menu {
     display: flex;
     list-style: none;
     gap: 10px;
 }
+
 .pre-menu img {
     width: 30px;
     height: 30px;
 }
+
 .pre-menu-info p {
     color: #159eec;
 }
+
 .pre-menu-info h3 {
     color: #1f2b6c;
 }
+
 .nav-menu {
     margin-top: 20px;
     height: 70px;
@@ -47,6 +56,7 @@ body {
     display: flex;
     justify-content: center;
 }
+
 .nav-menu ul {
     display: flex;
     list-style: none;
@@ -54,11 +64,13 @@ body {
     align-items: center;
     gap: 20px;
 }
+
 .nav-menu ul li a {
     text-decoration: none;
     color: #fff;
     font-weight: 300;
 }
+
 .nav-menu ul li a:hover {
     color: #159eec;
     font-weight: 600;
@@ -94,7 +106,7 @@ form input[type="password"] {
     box-sizing: border-box;
 }
 
-.form-container button{
+.form-container button {
     background-color: #007bff;
     color: #fff;
     border: none;
@@ -215,11 +227,13 @@ footer {
     color: #fff;
     font-size: 20px;
 }
-.fa-brands{
+
+.fa-brands {
     width: 30px;
     height: 20px;
     color: #ffffff;
-  }
+}
+
 .social-icons a:hover {
     color: #bfd2f8;
 }
