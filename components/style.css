@@ -321,6 +321,7 @@ body {
 }
 .slide-wrapper {
   display: flex;
+  padding: 20px;
   background-color: #eaeaea;
   justify-content: center;
   align-items: center;
