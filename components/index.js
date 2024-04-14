@@ -12,3 +12,4 @@ hamburger.onclick = () => {
     close.style.display = 'block';
     hamburger.style.display = 'none';
 };
+

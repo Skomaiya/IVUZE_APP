@@ -302,6 +302,7 @@ body {
   flex-direction: column;
   align-items: center;
   margin-top: 100px;
+  width: 100%;
 }
 .doctors h1 {
   color: #1f2b6c;
@@ -311,9 +312,49 @@ body {
   color: #159eec;
 }
 .doctors-container {
+  position: relative;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 20px;
   margin-top: 50px;
+}
+.slide-wrapper {
+  display: flex;
+  padding: 20px;
+  background-color: #eaeaea;
+  justify-content: center;
+  align-items: center;
+}
+.slider {
+  display: flex;
+  gap: 20px;
+}
+.left-btn,
+.right-btn {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.slider-dots {
+  display: flex;
+  gap: 10px;
+}
+.dots {
+  background-color: #159eec;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.dots:hover {
+  background-color: #1f2b6c;
+}
+.dots.active {
+  background-color: #1f2b6c;
 }
 .doctors-card {
   display: flex;

@@ -1,0 +1,28 @@
+*{
+    padding:0;
+    margin:0;
+    font-family:sans-serif;
+    box-sizing:border-box;
+}
+forms{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background-image:linear-gradient(#594c81,#BCBABA);
+
+}
+.container{
+ max-width: 650px;
+ padding:28px;
+ margin: 28px;
+ border-radius:10px;
+ overflow:hidden;
+ background:rgba(0,0,0,0.2);
+
+}
+h2{
+    font-size:26px;
+    font-weight:bold;
+    text-align:left
+}

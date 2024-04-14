@@ -42,8 +42,8 @@
             <img src="/images/hamburger.png" alt="img" class="open" />
           </div>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
+            <li><a href="#/components/index.html">Home</a></li>
+            <li><a href="/components/about.html">About Us</a></li>
             <li><a href="/components/doctors.html">Doctors</a></li>
             <li><a href="/components/hospitals.html">Hospitals</a></li>
             <li><a href="/components/contact.html">Contact</a></li>
@@ -221,29 +221,40 @@
       <h3>Trusted Care</h3>
       <h1>Our Doctors</h1>
       <div class="doctors-container">
-        <div class="doctors-card">
-          <img src="/images/doctor-1.png" alt="img" />
-          <div class="doc-info">
-            <p>Doctor Noble</p>
-            <h3>NEUROLOGY</h3>
+        <div class="slide-wrapper">
+          <img src="/images/left.png" alt="icon" class="left-btn" />
+          <div class="slider">
+            <div class="doctors-card">
+              <img src="/images/doctor-1.png" alt="img" />
+              <div class="doc-info">
+                <p>Doctor Noble</p>
+                <h3>NEUROLOGY</h3>
+              </div>
+              <a href="#">View Profile</a>
+            </div>
+            <div class="doctors-card">
+              <img src="/images/doctor-2.png" alt="img" />
+              <div class="doc-info">
+                <p>Doctor Ali</p>
+                <h3>GYNAECOLOGY</h3>
+              </div>
+              <a href="#">View Profile</a>
+            </div>
+            <div class="doctors-card active">
+              <img src="/images/doctor-3.png" alt="img" />
+              <div class="doc-info">
+                <p>Doctor Diane</p>
+                <h3>UROLOGY</h3>
+              </div>
+              <a href="#">View Profile</a>
+            </div>
           </div>
-          <a href="#">View Profile</a>
+          <img src="/images/right.png" alt="icon" class="right-btn" />
         </div>
-        <div class="doctors-card">
-          <img src="/images/doctor-2.png" alt="img" />
-          <div class="doc-info">
-            <p>Doctor Ali</p>
-            <h3>GYNAECOLOGY</h3>
-          </div>
-          <a href="#">View Profile</a>
-        </div>
-        <div class="doctors-card">
-          <img src="/images/doctor-3.png" alt="img" />
-          <div class="doc-info">
-            <p>Doctor Diane</p>
-            <h3>UROLOGY</h3>
-          </div>
-          <a href="#">View Profile</a>
+        <div class="slider-dots">
+          <div class="dots active"></div>
+          <div class="dots"></div>
+          <div class="dots"></div>
         </div>
       </div>
     </div>
