@@ -1,6 +1,7 @@
 @media (max-width: 480px) {
   .nav-logo h1 a {
     font-size: 25px;
+    text-decoration: none;
   }
   .hero {
     position: relative;

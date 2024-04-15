@@ -44,6 +44,15 @@ body {
 .pre-menu-info h3 {
   color: #1f2b6c;
 }
+.nav-logo h1 a {
+  color: #fff;
+  font-family: "Yeseva One", serif;
+  text-transform: uppercase;
+  display: none;
+}
+.nav-btn {
+  display: none;
+}
 .nav-menu {
   margin-top: 20px;
   height: 70px;
