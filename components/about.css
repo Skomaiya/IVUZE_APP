@@ -59,6 +59,9 @@ body {
   text-transform: uppercase;
   display: none;
 }
+.nav-btn {
+  display: none;
+}
 .nav-menu {
   display: flex;
   width: 100%;
