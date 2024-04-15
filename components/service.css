@@ -89,7 +89,7 @@ body {
 }
 .title {
   position: relative;
-  height: 200px;
+  height: 300px;
   background: url(/images/service.png) no-repeat right / cover;
   width: 100%;
   align-items: center;
