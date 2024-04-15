@@ -322,7 +322,6 @@ body {
 .slide-wrapper {
   display: flex;
   padding: 20px;
-  background-color: #eaeaea;
   justify-content: center;
   align-items: center;
 }
@@ -330,19 +329,7 @@ body {
   display: flex;
   gap: 20px;
 }
-.left-btn,
-.right-btn {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
-}
-.slider-dots {
-  display: flex;
-  gap: 10px;
-}
+
 .dots {
   background-color: #159eec;
   width: 12px;
