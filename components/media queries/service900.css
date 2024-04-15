@@ -1,0 +1,26 @@
+/*  services 900px */
+@media (max-width: 900px) {
+  .service-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .tittle {
+    padding: 0;
+  }
+  .title-info {
+    margin-left: 20px;
+  }
+  .title-info p {
+    font-size: 16px;
+  }
+  .title-info h1 {
+    font-size: 40px;
+  }
+  .service-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
