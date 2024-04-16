@@ -35,4 +35,8 @@ app.get('/service',(req,res)=>{
 app.get('/services',(req,res)=>{
     res.sendFile(path.join(__dirname, 'components','single-service.html'));
 })
+app.get('/booking',(req,res)=>{
+    res.sendFile(path.join(__dirname, 'components','booking.html'));
+})
+
 export default app
