@@ -528,7 +528,7 @@ footer {
     }
   }
   
-  @media (min-width: 900px) and (max-width: 1160px) {
+ @media (min-width: 900px) and (max-width: 1160px) {
     .pre-nav-info {
       position: relative;
       right: 150px;
@@ -536,8 +536,5 @@ footer {
     .container {
       padding-inline: 0;
     }
-  }
-  
-
 }
 

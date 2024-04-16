@@ -208,9 +208,7 @@ body {
 }
 .text {
   position: inherit;
-  text-align: inherit;
   background-color: #bfd2f8;
-  left: 28em;
   height: 142px;
   width: 316px;
   weight: 100px;
