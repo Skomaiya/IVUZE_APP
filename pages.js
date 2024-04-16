@@ -30,6 +30,9 @@ app.get('/',(req,res)=>{
 //     res.sendFile(path.join(__dirname, 'components', 'dashboard.html'));
 // })
 app.get('/service',(req,res)=>{
-    res.sendFile(path.join(__dirname, 'components','services.html'));
+    res.sendFile(path.join(__dirname, 'components','service.html'));
+})
+app.get('/services',(req,res)=>{
+    res.sendFile(path.join(__dirname, 'components','single-service.html'));
 })
 export default app

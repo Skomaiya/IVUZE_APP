@@ -50,5 +50,5 @@ const hospitalSchema = new mongoose.Schema({
     },
   ],
 });
-const hospital = mongoose.model("hospitals", hospitalSchema);
+const hospital = mongoose.model("hospital", hospitalSchema);
 export default hospital;

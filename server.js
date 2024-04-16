@@ -14,7 +14,7 @@ const app = express();
 
 const port = 4000;
 const db =
-  "mongodb+srv://Mariya:KKXp3IWxu7Sbp5zi@cluster0.fslpg5p.mongodb.net/IVUZE_App";
+  "mongodb://localhost:27017/IVUZE_App";
 //Middleware
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -29,14 +29,19 @@ app.use(router);
 app.use(routerV);
 app.use(Hrouter);
 
-mongoose.connect(db);
-try {
-  console.log("DB connected successfully");
-  app.listen(port, () => {
-    console.log(`server is running on port ${port} .... `);
+mongoose.connect(db, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
   });
-} catch (err) {
-  console.log(err);
-}
+  
+  const dbConnection = mongoose.connection;
+  dbConnection.on("error", console.error.bind(console, "MongoDB connection error:"));
+  dbConnection.once("open", () => {
+    console.log("Connected to MongoDB successfully");
+    // Start the server
+    app.listen(port, () => {
+      console.log(`Server is running on port ${port}`);
+    });
+  });
 
 app.use(errorhandling);

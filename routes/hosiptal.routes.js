@@ -37,5 +37,7 @@ Hrouter.get("/dashboard", async (req, res, next) => {
     next(error);
   }
 });
+Hrouter.delete("/remove",hospitalController.hospitaldeleteById)
+Hrouter.get("/list",hospitalController.hospitalList)
 
 export default Hrouter;

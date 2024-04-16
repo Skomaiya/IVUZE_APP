@@ -75,9 +75,22 @@ async function hospitalListById(req, res, next) {
   }
 }
 
+async function hospitaldeleteById(req, res, next) {
+  try{
+    const deleteHospital = await hospital.findByIdAndDelete(req.params.id);
+    res.status(200).json({ message: "Hospital deleted successfully" });
+
+  }
+  catch(err){
+    next(err);
+  }
+}
+
 // Export the functions as an object with default export
 export default {
   createHospital,
   hospitalList,
   hospitalListById,
+  hospitaldeleteById,
+  hospitalList,
 };
