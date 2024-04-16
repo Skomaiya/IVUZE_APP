@@ -29,6 +29,14 @@
           </div>
         </div>
         <div class="nav-menu">
+          <div class="nav-logo">
+            <h1><a href="#">IvuzeAPP</a></h1>
+          </div>
+          <div class="nav-btn">
+            <img src="/images/search.png" alt="search" />
+            <img src="/images/close.png" alt="img" class="close" />
+            <img src="/images/hamburger.png" alt="img" class="open" />
+          </div>
           <ul>
             <li><a href="/components/index.html">Home</a></li>
             <li><a href="#">About Us</a></li>
@@ -135,16 +143,16 @@
        
     </div>
    
-<footer>
-    <div class="footer container">
-        <div class="top">
-          <div class="logo">
-            <img src="/images/logo2.png" alt="img" />
-            <p>Leading the Way in Medical <br> Execellence, Trusted Care.</p>
-          </div>
-          <div class="links">
-            <h3>Important Links</h3>
-            <ul>
+   <footer>
+        <div class="footer container">
+            <div class="top">
+                <div class="logo">
+                 <img src="/images/logo2.png" alt="img" />
+                <p>Leading the Way in Medical <br> Execellence, Trusted Care.</p>
+                 </div>
+                <div class="links">
+              <h3>Important Links</h3>
+             <ul>
               <li><a href="#">Appiontment</a></li>
               <li><a href="#">Doctors</a></li>
               <li><a href="#">Services</a></li>
@@ -178,8 +186,20 @@
           </div>
         </div>
       </div>
-</footer>
-<body>
+  </footer>
+  <script>const hamburger = document.querySelector('.open');
+    const close = document.querySelector('.close');
     
+    close.onclick = () => {
+        document.querySelector('.nav-menu ul').classList.remove('active');
+        close.style.display = 'none';
+        hamburger.style.display = 'block';
+    }
+    
+    hamburger.onclick = () => {
+        document.querySelector('.nav-menu ul').classList.toggle('active');
+        close.style.display = 'block';
+        hamburger.style.display = 'none';
+    };</script>
 </body>
 </html>

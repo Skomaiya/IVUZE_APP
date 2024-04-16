@@ -242,7 +242,6 @@ body {
   border-radius: 10px;
 }
 .text {
-<<<<<<< HEAD
   position: inherit;
   background-color: #bfd2f8;
   height: 142px;
@@ -252,10 +251,12 @@ body {
   border-bottom-right-radius: 5px;
 }
 .text h3{
+  text-align: center;
   padding-top: 10px;
 }
 
 .text p{
+  text-align: center;
   padding-top: 10px;
 }
 
@@ -267,8 +268,6 @@ body {
   color: #bfd2f8;
   font-size: 18px;
   text-decoration: none;
-=======
->>>>>>> fe9527b7e20a551d725245fdee0d534dbf3a2d61
   position: relative;
   display: flex;
   flex-direction: column;
