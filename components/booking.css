@@ -234,6 +234,7 @@ body {
   grid-template-columns: 1fr 1fr;
 }
 .form-grid input {
+    display: none;
   border: 1px solid #eaeaea;
   border-radius: 0;
   background-color: #1f2b6c;
@@ -246,6 +247,7 @@ body {
   font-family: "Work Sans", sans-serif;
 }
 .form textarea {
+    display: none;
   padding: 20px;
   border: none;
   background-color: #1f2b6c;
@@ -631,14 +633,15 @@ footer {
     }
 
     .calendar{
-        position: relative;
+        position: absolute;
         right: 0;
-        left: 100;
+        left: 0;
+        text-align: center;
         border: 1px rgb(239, 239, 235) solid;
         background-color: #1f2b6c;
         color: #BFD2F8;
         border-radius: 10px;
-        width: 70%;
+        width: 100%;
     }
 
     .booking {
