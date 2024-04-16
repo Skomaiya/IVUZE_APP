@@ -3,9 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/components/style.css" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="/components/media queries/900.css" />
     <link rel="stylesheet" href="/components/media queries/480.css" />
+    
+
     <title>Ivuze app</title>
   </head>
   <body>
@@ -17,7 +19,7 @@
           </div>
           <div class="pre-nav-info">
             <div class="pre-menu">
-              <img src="/images/phone.png" alt="img" />
+              <img src="images/phone.png" alt="img" />
               <div class="pre-menu-info">
                 <h3>EMERGENCY</h3>
                 <p>(250) 781-812-255</p>
@@ -42,13 +44,13 @@
             <img src="/images/hamburger.png" alt="img" class="open" />
           </div>
           <ul>
-            <li><a href="#/components/index.html">Home</a></li>
-            <li><a href="/components/about.html">About Us</a></li>
-            <li><a href="/components/doctors.html">Doctors</a></li>
-            <li><a href="/components/hospitals.html">Hospitals</a></li>
-            <li><a href="/components/contact.html">Contact</a></li>
-            <li><a href="/components/sign-up.html">SignUp</a></li>
-            <li><a href="/components/login.html">LogIn</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/doctor">Doctors</a></li>
+            <li><a href="/hospital">Hospitals</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/signup">SignUp</a></li>
+            <li><a href="/login">LogIn</a></li>
           </ul>
         </div>
       </div>
@@ -169,7 +171,7 @@
         </div>
         <div class="grid-card">
           <img src="/images/heartblue.png" alt="img" />
-          <p>Gynaecology</p>
+          <a href="/services"> <p>Gynaecology</p></a>
         </div>
       </div>
     </div>
@@ -211,7 +213,11 @@
           cols="30"
           rows="10"
         ></textarea>
+<<<<<<< HEAD
         <a href="#">Direct Booking</a>
+=======
+        <a href="/doctor">SUBMIT</a>
+>>>>>>> 0f291f6b479216d4928b5ec2234d6bbd06241f7b
       </div>
     </div>
     <!-- booking section End -->
@@ -222,6 +228,7 @@
       <h1>Our Doctors</h1>
       <div class="doctors-container">
         <div class="slide-wrapper">
+          <img src="/images/left.png" alt="icon" class="left-btn" />
           <div class="slider">
             <div class="doctors-card">
               <img src="/images/doctor-1.png" alt="img" />
@@ -248,6 +255,12 @@
               <a href="#">View Profile</a>
             </div>
           </div>
+          <img src="/images/right.png" alt="icon" class="right-btn" />
+        </div>
+        <div class="slider-dots">
+          <div class="dots active"></div>
+          <div class="dots"></div>
+          <div class="dots"></div>
         </div>
       </div>
     </div>

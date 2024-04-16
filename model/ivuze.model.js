@@ -21,7 +21,7 @@ const ivuzeSchema = new mongoose.Schema({
     role: {
         type: String,
         enum: ['user', 'hospital'],
-        default: 'user'
+       
     }
 }, { timestamps: true });
 

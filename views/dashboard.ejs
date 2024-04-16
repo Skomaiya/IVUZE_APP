@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="about.css" />
+    <script src="https://kit.fontawesome.com/a76e832906.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="dashboard.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Ivuze app</title>
+</head>
+
+<body>
+ 
+
+   
+  <body>
+    <header>
+      <div class="nav">
+        <div class="pre-nav">
+          <div class="h-logo">
+            <a href="home.html"><img src="/images/logo.png" alt="img" /></a>
+          </div>
+          <div class="pre-nav-info">
+            <div class="pre-menu">
+              <img src="/images/phone.png" alt="img" />
+              <div class="pre-menu-info">
+                <h3>EMERGENCY</h3>
+                <p>(250) 781-812-255</p>
+              </div>
+            </div>
+            <div class="pre-menu">
+              <img src="/images/clock.png" alt="img" />
+              <div class="pre-menu-info">
+                <h3>WORKING HOURS</h3>
+                <p>24/7</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-menu">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/doctor">Doctors</a></li>
+            <li><a href="/hospital">Hospitals</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/signup">SignUp</a></li>
+            <li><a href="/login">LogIn</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <div class="forms">
+      <div class="container">
+        <form action="/registerhospital" enctype="multipart/form-data" method="POST">
+          <h2>Registration</h2>
+          <!-- <%= user_id %>
+                <%= email %> -->
+          <div class="content">
+            <div class="input-box">
+              <label for="name">Hospital-name</label>
+              <input
+                type="text"
+                placeholder="Hospital-name"
+                name="hospital_name"
+              />
+            </div>
+            <div class="input-box">
+              <label for="name">Hospital-Type</label>
+              <input
+                type="text"
+                placeholder="Enter hospital type"
+                name="hospital_type"
+              />
+            </div>
+            <div class="input-box">
+              <label for="name">location</label>
+              <input type="text" placeholder="Location" name="location" />
+            </div>
+            <div class="input-box">
+              <label for="name">capacity</label>
+              <input type="number" placeholder="fullname" name="capacity" />
+            </div>
+            <div class="input-box">
+              <label for="name">Description</label>
+              <input type="text" placeholder="Description" name="description" />
+            </div>
+            <div class="input-box">
+              <label for="Contact">Contact</label>
+              <input type="text" placeholder="fullname" name="contact" />
+            </div>
+            <div class="input-box">
+              <label for="name">Email</label>
+              <input type="text" placeholder="email" name="email" />
+            </div>
+            <div class="input-box">
+              <label for="vendor">vendor</label>
+              <input type="text" placeholder="fullname" name="vendor" />
+            </div>
+            <div class="input-box">
+              <label for="filename">Photo</label>
+              <input type="file" name="filename" />
+            </div>
+
+            <div><button type="submit">submit</button></div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>

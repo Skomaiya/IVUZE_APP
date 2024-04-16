@@ -36,13 +36,13 @@
         </div>
         <div class="nav-menu">
             <ul>
-                <li><a href="/components/home.html">Home</a></li>
+                <li><a href="/">Home</a></li>
                 <li><a href="/components/about.html">About Us</a></li>
-                <li><a href="/components/doctors.html">Doctors</a></li>
-                <li><a href="/components/hospitals.html">Hospitals</a></li>
-                <li><a href="/components/contact.html">Contact</a></li>
-                <li><a href="/components/sign-up.html">SignUp</a></li>
-                <li><a href="/components/login.html">LogIn</a></li>
+                <li><a href="/doctor">Doctors</a></li>
+                <li><a href="/hospital">Hospitals</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/signup">SignUp</a></li>
+                <li><a href="/login">LogIn</a></li>
             </ul>
         </div>
     </div>
@@ -52,7 +52,7 @@
     <form action="/register" method="post" name="signup-form">
         <h2>Sign Up</h2>
         <div>
-            <input type="text" name="full_name" placeholder="Name" required>
+            <input type="text" name="hospital_name" placeholder="Name" required>
         </div>
         <div class="hospital-type">
             <h4>Hospital Type</h4><br>
@@ -76,7 +76,7 @@
     </form>
     <div class="patient-form">
         <p>OR</p><br>
-        <input type="submit" value="Sign Up as patient">
+     <a href="/"><input type="submit" value="Sign Up as patient"></a>
     </div>
 </div>
 
@@ -125,43 +125,43 @@
     </div>
 </footer>
 
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-    const form = document.querySelector('form[name="signup-form"]');
+<!-- <script>
+    document.addEventListener('DOMContentLoaded', () => {
+  const form = document.querySelector('form[name="signup-form"]');
 
-    form.addEventListener('submit', async (e) => {
-        e.preventDefault();
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault(); // Prevent default form submission
+    
+    const full_name = form.querySelector('input[name="full_name"]').value;
+    const hospital_type = form.querySelector('input[name="hospital-type"]:checked').value;
+    const email = form.querySelector('input[name="email"]').value;
+    const password = form.querySelector('input[name="password"]').value;
 
-        const fullName = form.querySelector('input[name="full_name"]').value;
-        const hospitalType = form.querySelector('input[name="hospital-type"]:checked').value;
-        const email = form.querySelector('input[name="email"]').value;
-        const password = form.querySelector('input[name="password"]').value;
+    try {
+      const response = await fetch('/register', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ name: full_name, hospitalCategory: hospital_type, email, password })
+      });
 
-        try {
-            const response = await fetch('/register', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({ name: fullName, hospitalCategory: hospitalType, email, password })
-            });
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
 
-            const data = await response.json();
-
-            if (response.ok) {
-                console.log('Signup successful!');
-                window.location.assign('/'); // Redirect to home page
-            } else {
-                console.error('Signup failed:', data.message);
-                // Handle error scenario (e.g., display error messages)
-            }
-        } catch (error) {
-            console.error('Error during signup:', error);
-            // Handle network or other errors
-        }
-    });
+      const data = await response.json();
+      console.log('User registered successfully:', data);
+      // Redirect or show success message to the user
+    } catch (error) {
+      console.error('Registration error:', error.message);
+      // Handle network or other errors
+      // Display error message to the user
+    }
+  });
 });
-</script>
+
+</script> -->
 
 </body>
 </html>

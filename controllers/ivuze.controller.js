@@ -1,59 +1,69 @@
 import ivuzeModel from "../model/ivuze.model.js";
 import jwt from "jsonwebtoken";
 import bcrypt from "bcrypt";
-import dotenv from "dotenv"
-dotenv.config()
+import dotenv from "dotenv";
+dotenv.config();
 
 const ivuzeController = {
-   
-        signup: async (req, res) => {
-          try {
-            const { name, email, hospitalCategory, password } = req.body;
-      
-            // Check if all required fields are provided
-            if (!(name && email && password)) {
-              return res.status(400).json({ message: "All fields are required" });
-            }
-      
-            // Check if user already exists
-            const existingPatient = await ivuzeModel.findOne({ email });
-            if (existingPatient) {
-              return res.status(400).json({ message: "User already exists" });
-            }
-      
-            // Create new user
-            const newUser = await ivuzeModel.create({ name, email, hospitalCategory, password });
-      
-            // Respond with success message and user data
-            res.status(201).json({
-              message: "New user created",
-              user: newUser,
-            });
-          } catch (error) {
-            console.error("Signup error:", error);
-            res.status(500).json({ message: "Internal Server Error" });
-          }
-        },
-      
+  signup: async (req, res) => {
+    try {
+      console.log(req.body);
+      const { hospital_name, hospital_type, email, password } = req.body;
+
+      // Check if all required fields are provided
+      if (!(hospital_name && email && password)) {
+        return res
+          .status(400)
+          .json({
+            message: "All fields are required for hospital registration",
+          });
+      }
+
+      // Check if hospital already exists
+      const existingHospital = await ivuzeModel.findOne({ hospital_name });
+      if (existingHospital) {
+        return res.status(400).json({ message: "Hospital already exists" });
+      }
+
+      // Create new hospital
+      const newHospital = await ivuzeModel.create({
+        name: hospital_name, // Use 'name' instead of 'hospital_name'
+        hospital_type: req.body["hospital-type"], // Access 'hospital-type' using bracket notation
+        email,
+        password,
+      });
+
+      // Respond with success message and hospital data
+
+      res.redirect("/login");
+    } catch (error) {
+      console.error("Hospital registration error:", error);
+      res.status(500).json({ message: "Internal Server Error" });
+    }
+  },
 
   loginHospital: async (req, res) => {
     try {
       const { email, password } = req.body;
 
-      // Check if email and password are provided
-      if (!(email && password)) {
-        return res.status(400).json({ message: "Invalid credentials" });
-      }
+      // Debugging: Log the email received from the request body
+      console.log("Login attempt with email:", email);
 
       // Find hospital by email
       const hospitalAvailable = await ivuzeModel.findOne({ email });
+
+      // Debugging: Log the hospitalAvailable object to inspect
+      console.log("Hospital found:", hospitalAvailable);
 
       if (!hospitalAvailable) {
         return res.status(404).json({ message: "Hospital not registered" });
       }
 
       // Compare passwords
-      const isMatch = await bcrypt.compare(password, hospitalAvailable.password);
+      const isMatch = await bcrypt.compare(
+        password,
+        hospitalAvailable.password
+      );
 
       if (!isMatch) {
         return res.status(401).json({ message: "Invalid password" });
@@ -73,12 +83,10 @@ const ivuzeController = {
         httpOnly: true,
       };
 
-      res.cookie("token", token, options).status(200).json({
-        success: true,
-        token,
-        hospitalAvailable: { _id: hospitalAvailable._id, email: hospitalAvailable.email },
-      });
-
+      res
+        .cookie("token", token, options)
+        .status(200)
+        .redirect("dashboard")
     } catch (error) {
       console.error("Login error:", error);
       res.status(500).json({ message: "Internal Server Error" });
@@ -87,7 +95,11 @@ const ivuzeController = {
 
   update: async (req, res) => {
     try {
-      const updatedUser = await ivuzeModel.findOneAndUpdate({ _id: req.query.id }, req.body, { new: true });
+      const updatedUser = await ivuzeModel.findOneAndUpdate(
+        { _id: req.query.id },
+        req.body,
+        { new: true }
+      );
       res.status(200).json({ user: updatedUser });
     } catch (error) {
       console.error("Update error:", error);
