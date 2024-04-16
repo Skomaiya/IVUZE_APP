@@ -5,4 +5,5 @@ const router = Router();
 
 router.post("/register", ivuzeController.signup);
  router.post("/login",ivuzeController.loginHospital); //
+ 
 export default router;
